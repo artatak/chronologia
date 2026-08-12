@@ -22,13 +22,11 @@ h1 {
     display: none;
 }
 #chronoConfig {
-  /* Positionnement par-dessus le contenu */
   position: absolute;
-  top: 60px; /* Ajuste selon la hauteur de ton bouton */
+  top: 60px; 
   left: 20px;
-  z-index: 1000; /* S'assure que le menu passe au-dessus du reste */
+  z-index: 1000; 
 
-  /* Apparence visuelle */
   background-color: #06aceeee;
   border: 1px solid #e2e8f0;
   border-radius: 15px;
@@ -55,7 +53,6 @@ h1 {
   transition: background-color 0.2s ease;
 }
 
-/* 3. Effet au survol des éléments */
 #chronoConfig a:hover,
 #chronoConfig button:hover {
   background-color: #f3f4f6;
@@ -63,8 +60,8 @@ h1 {
 }
 #ChronoContainer {
   display: flex;
-  justify-content: center; /* Centrage horizontal */
-  align-items: center;     /* Centrage vertical (si le conteneur a une hauteur) */
+  justify-content: center; 
+  align-items: center;     
   min-height: 100vh;
   width: 100%;
 }
