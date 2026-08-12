@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5457ee;
+}
+#cronoreader-header {
+    background-color: #ff0000;
+    border-bottom: 1px solid #ff0000;
+    padding: 1px;
+    text-align: center;
+}
+h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden{
+    display: none;
+}
+#chronoConfig {
+  /* Positionnement par-dessus le contenu */
+  position: absolute;
+  top: 60px; /* Ajuste selon la hauteur de ton bouton */
+  left: 20px;
+  z-index: 1000; /* S'assure que le menu passe au-dessus du reste */
+
+  /* Apparence visuelle */
+  background-color: #06aceeee;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 8px;
+  min-width: 200px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+/* 2. Style des boutons ou liens à l'intérieur du menu */
+#chronoConfig a,
+#chronoConfig button {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 2px;
+  color: #1f2937;
+  font-family: inherit;
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* 3. Effet au survol des éléments */
+#chronoConfig a:hover,
+#chronoConfig button:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+#ChronoContainer {
+  display: flex;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center;     /* Centrage vertical (si le conteneur a une hauteur) */
+  min-height: 100vh;
+  width: 100%;
+}

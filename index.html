@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chronologia</title>
+        <link rel="stylesheet" href="css/chronoreader.css">
+    </head>
+    <body>
+        <h1>chronologia</h1>
+        <input type="file" id="loadJsonButton" accept=".json">
+        <div style="position:relative;display:inline-block;"></div>
+            <button  id="newchrono">Nouvelle chronologie</button>
+            <div id="chronoConfig" class="hidden">
+                <p>Configuration de la nouvelle chronologie</p>
+                <label for="chronoName">Nom de la chronologie :</label>
+                <input type="text" id="chronoName" name="chronoName">
+                <label for="chronoDescription">Description :</label>
+                <textarea id="chronoDescription" name="chronoDescription"></textarea>
+                <label for="chronoStartDate">Date de début :</label>
+                <input type="date" id="chronoStartDate" name="chronoStartDate">
+                <label for="chronoEndDate">Date de fin :</label>
+                <input type="date" id="chronoEndDate" name="chronoEndDate">
+                <button id="createChrono">Créer</button>
+            </div>
+        </div>
+        <div id="ChronoContainer">
+        </div>
+        <pre id="jsonOutput"></pre>
+        <script src="js/chronoreader.js"></script>
+    </body>
+</html>
